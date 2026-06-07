@@ -1,0 +1,242 @@
+<!-- Save this as blog.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Simple Blog Page</title>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#f4f7fb;
+      color:#333;
+      line-height:1.6;
+    }
+
+    /* HEADER */
+
+    header{
+      background:linear-gradient(135deg,#4f46e5,#7c3aed);
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    header h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:18px;
+      opacity:0.9;
+    }
+
+    /* BLOG SECTION */
+
+    .blog-container{
+      width:90%;
+      max-width:1000px;
+      margin:50px auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    /* BLOG CARD */
+
+    .blog-card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s ease;
+    }
+
+    .blog-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .blog-image img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .blog-content{
+      padding:25px;
+    }
+
+    .blog-content h2{
+      font-size:24px;
+      margin-bottom:10px;
+      color:#4f46e5;
+    }
+
+    .blog-info{
+      font-size:14px;
+      color:#777;
+      margin-bottom:15px;
+    }
+
+    .blog-content p{
+      font-size:15px;
+      margin-bottom:20px;
+    }
+
+    .read-more{
+      text-decoration:none;
+      color:white;
+      background:#7c3aed;
+      padding:10px 18px;
+      border-radius:8px;
+      display:inline-block;
+      transition:0.3s;
+    }
+
+    .read-more:hover{
+      background:#5b21b6;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#1e1b4b;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:600px){
+
+      header h1{
+        font-size:32px;
+      }
+
+      .blog-content h2{
+        font-size:20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <h1>TechVerse Blog</h1>
+    <p>Latest Articles on Technology, Coding & Innovation</p>
+  </header>
+
+  <!-- BLOG POSTS -->
+
+  <section class="blog-container">
+
+    <!-- BLOG 1 -->
+
+    <div class="blog-card">
+
+      <div class="blog-image">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Web Development">
+      </div>
+
+      <div class="blog-content">
+
+        <h2>Getting Started with Web Development</h2>
+
+        <div class="blog-info">
+          By John Smith | August 10, 2026
+        </div>
+
+        <p>
+          Learn the basics of HTML, CSS, and JavaScript to begin your journey as a modern web developer.
+        </p>
+
+        <a href="#" class="read-more">Read More</a>
+
+      </div>
+
+    </div>
+
+    <!-- BLOG 2 -->
+
+    <div class="blog-card">
+
+      <div class="blog-image">
+        <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1200&auto=format&fit=crop" alt="Artificial Intelligence">
+      </div>
+
+      <div class="blog-content">
+
+        <h2>How AI is Transforming the Future</h2>
+
+        <div class="blog-info">
+          By Emily Watson | August 14, 2026
+        </div>
+
+        <p>
+          Artificial Intelligence is revolutionizing industries with automation, smart systems, and innovation.
+        </p>
+
+        <a href="#" class="read-more">Read More</a>
+
+      </div>
+
+    </div>
+
+    <!-- BLOG 3 -->
+
+    <div class="blog-card">
+
+      <div class="blog-image">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Cyber Security">
+      </div>
+
+      <div class="blog-content">
+
+        <h2>Top Cyber Security Tips in 2026</h2>
+
+        <div class="blog-info">
+          By David Lee | August 18, 2026
+        </div>
+
+        <p>
+          Protect your online accounts and personal data with these important cyber security practices.
+        </p>
+
+        <a href="#" class="read-more">Read More</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>© 2026 TechVerse Blog | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
